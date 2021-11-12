@@ -20,6 +20,7 @@ docker image push dcbove/ok:alpha
 
 ```bash
 docker container run -p 5051:5051 -e FOO=test -e PORT=5051 ok
+wget --output-document - http://localhost:5051
 docker container stop <name>
 ```
 
