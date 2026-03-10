@@ -5,7 +5,7 @@ import datetime
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from socketserver import ForkingMixIn
 
-VERSION_FLAG = "delta"
+VERSION_FLAG = os.environ.get("VERSION_FLAG", "delta")
 ENV_FOO = os.environ.get("FOO", "<not set>")
 ENV_PORT = int(os.environ.get("PORT", "5051"))
 
